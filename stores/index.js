@@ -4,7 +4,7 @@ import * as actions from "./actions"
 import auth from "./modules/auth"
 import cart from "./modules/cart"
 import product from "./modules/product";
-
+import comments from "./modules/comments"
 
 Vue.use(Vuex);
 
@@ -14,6 +14,7 @@ export default new Vuex.Store({
     modules:{
         auth,
         product,
-        cart
+        cart,
+        comments
     }
 })

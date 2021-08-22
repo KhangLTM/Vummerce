@@ -13,7 +13,7 @@
             <!-- <button class="px-10 " @click="sortByPriceUp">Sort by price up </button>
             <button class="px-10 " @click="sortByPriceDown">Sort by price down </button> -->
     </span>
-    <div class="py-5 bg-gray-100 grid grid-cols-1 lg:grid-cols-4  place-items-center lg:auto-rows-max	">
+    <div class="py-5 bg-gray-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  place-items-center lg:auto-rows-max	">
         <product-item v-for="prop in product" :key="prop.id" :items="prop" />
     </div>
    

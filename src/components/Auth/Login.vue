@@ -1,10 +1,10 @@
 <template>
-<div class="bg-gray-200 h-screen bgg flex flex-col space-y-10 justify-center items-center">
-    <div class="bg-white w-96 shadow-xl rounded p-5">
+<div class=" bg-gray-200 h-screen bgg flex flex-col space-y-10 justify-center items-center">
+    <div class="md:opacity-90 bg-white w-96 shadow-xl rounded p-5">
         <h1 class="text-3xl font-medium">Welcome</h1>
         <p class="text-sm">Sign in and buy amazing product</p>
 
-        <form @submit.prevent="onSubmit" class="space-y-5 mt-5">
+        <form  @submit.prevent="onSubmit" class=" space-y-5 mt-5">
             <input type="email" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Email" v-model="email" required />
             <div class="w-full flex items-center border border-gray-800 rounded px-3">
                 <input id="password" type="password" class="w-4/5 h-12" placeholder="Password" v-model="password" required />
@@ -78,9 +78,10 @@ export default {
 </script>
 
 <style>
-@media only screen and (min-width:820px) {
+@media only screen and (min-width:750px) {
     .bgg {
         background-image: url("https://cdn.wccftech.com/wp-content/uploads/2018/05/customers-buying-iPhone-X.jpg");
+        object-fit: cover;
         background-size: cover;
         background-repeat: no-repeat;
     }

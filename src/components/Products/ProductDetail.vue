@@ -1,5 +1,5 @@
 <template>
-        <section class="text-gray-700 body-font overflow-hidden bg-white">
+        <section class="text-gray-700 body-font overflow-hidden bg-gray-100">
   <div class="container px-5 py-24 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
       <img  class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" :src="product.thumbnail_url">
@@ -41,9 +41,11 @@
           </button>
         </div>
       </div>
+          <Comments class="w-full  mt-5" />
     </div>
       
   </div>
+  
 </section>
 
 
@@ -56,8 +58,12 @@ import {
     mapGetters, mapMutations
 } from 'vuex'
 
-export default {
+import Comments from '../comments.vue'
 
+export default {
+    components:{
+        Comments
+    },
     computed: {
         ...mapGetters(['products','currentUser','cartItem']),
         product: function () {

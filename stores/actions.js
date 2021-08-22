@@ -38,4 +38,17 @@ export function getCart({commit},data){
             })
     
     }
+export function pushComment(_,comment){
+        return ref.child("Comments").push(
+            
+            
+            comment)
+    }
+export function getComment({commit}){
+       return ref.child("Comments").on("value",(com)=>{
+           commit("updateComment",com.val())
+       })
+    }   
+
+
 

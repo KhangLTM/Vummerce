@@ -1,6 +1,6 @@
 <template>
 <div class=" h-screen bg-gray-200 bgg flex flex-col space-y-10 justify-center items-center">
-    <div class="bg-white w-96 shadow-xl rounded p-5">
+    <div class="md:opacity-90 bg-white w-96 shadow-xl rounded p-5">
         <h1 class="text-3xl font-medium">Welcome</h1>
         <p class="text-sm"> All best quality Apple Products are here. </p>
 
