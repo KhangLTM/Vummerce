@@ -23,7 +23,7 @@ Vue.use(VueSweetalert2,options)
 firebaseListener(authStatusChange);
 
 const router = new VueRouter({    
-    mode:'history',
+    mode:'hash',
     // linkActiveClass: ' bg-gray-900 ',
 
     scrollBehavior() {

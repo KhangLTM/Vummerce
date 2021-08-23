@@ -1,6 +1,6 @@
 <template>
 <div>
-   
+    <Loading v-show="isLoad" />
     <Slide v-show="!isSearch" />
     <span v-show="!isSearch" class="hidden lg:flex w-30 justify-end mt-8 mr-8 ">
             <select @change="selectSort" >
@@ -30,15 +30,17 @@ import {
 import ProductItem from '../components/Products/ProductItem.vue'
 import Slide from '../views/Slide.vue'
 import cantFind from '../components/Products/cantFind.vue'
+import Loading from '../views/Loading.vue'
 export default {
     components: {
         ProductItem,
         Slide,
-        cantFind
+        cantFind,
+        Loading
 
     },
     computed: {
-        ...mapGetters(['isSort','sortedProduct','products', 'titleSearch', 'isSearch']),
+        ...mapGetters(['isSort','sortedProduct','products', 'titleSearch', 'isSearch','isLoad']),
         product: function () {
             if(!this.isSort){ 
                 if (!this.isSearch)

@@ -7,12 +7,14 @@ const state={
     ],
     searchProd:"",
     isSearchs:"",
-    isSorts:false
+    isSorts:false,
+    isLoading:true,
 }
 
 const mutations={
         updateProductList(state,productList){
             state.productList=productList
+            state.isLoading=false
         },
         setSearchProduct(state,value){
              state.searchProd=value.productTitle.toLowerCase()
@@ -49,6 +51,9 @@ const getters ={
     },
     isSort:(state)=>{
         return state.isSorts
+    },
+    isLoad:(state)=>{
+        return state.isLoading
     }
 }
 

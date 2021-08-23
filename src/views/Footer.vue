@@ -64,7 +64,8 @@
 </form>
 </div>        
         <p class="mt-8 text-base leading-6 text-center text-gray-200">
-            © 2021 KHANGLTM, Inc. All rights reserved.
+            <a href="https://github.com/KhangLTM/Vummerce">
+              Checkout my repository here : https://github.com/KhangLTM/Vummerce </a>
         </p>
     </div>
 </section>
