@@ -1,5 +1,5 @@
 <template>
-        <section class="text-gray-700 body-font overflow-hidden bg-gray-100">
+        <section class="text-gray-700 body-font overflow-hidden bg-white">
   <div class="container px-5 py-24 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
       <img  class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" :src="product.thumbnail_url">

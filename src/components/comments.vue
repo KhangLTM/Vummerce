@@ -3,7 +3,7 @@
     <h1 class="text-2xl font-bold">Comments ({{length}})</h1>
     <form @submit.prevent="onSubmit()" class="flex ">
 
-        <div class="w-full bg-gray-100 p-2 pt-4 rounded">
+        <div class="w-full bg-white p-2 pt-4 rounded">
             <div class="flex ml-3">
                 <div class="mr-3">
                     <img src="http://picsum.photos/50" alt="" class="rounded-full">
@@ -24,7 +24,7 @@
     </form>
     <transition-group name="fade" >
     <div v-show="commentIndex <= numberCom" v-for="commentIndex of numberCom" :key="commentIndex" class="flex py-5 ">
-        <div class="w-full bg-white  p-2 pt-4 rounded">
+        <div class="w-full shadow-md   p-2 pt-4 rounded">
             <div class="flex ml-3">
                 <div class="mr-3">
                     <img src="https://picsum.photos/50" alt="" class="rounded-full">

@@ -1,9 +1,10 @@
 <template>
-<div>
+<div class='bg-white'>
     <Loading v-show="isLoad" />
     <Slide v-show="!isSearch" />
-    <span v-show="!isSearch" class="hidden lg:flex w-30 justify-end mt-8 mr-8 ">
-            <select @change="selectSort" >
+    <span v-show="!isSearch" class="sort hidden lg:flex w-30  justify-end mt-7   ">
+            
+            <select class="  font-medium"  @change="selectSort" >
                 <option disabled>---Sorting Product---</option>
                 <option value="">No sort</option>
                 <option value="sortUp"> Sort by price up</option>
@@ -12,8 +13,12 @@
             
             <!-- <button class="px-10 " @click="sortByPriceUp">Sort by price up </button>
             <button class="px-10 " @click="sortByPriceDown">Sort by price down </button> -->
+            
     </span>
-    <div class="py-5 bg-gray-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  place-items-center lg:auto-rows-max	">
+    <h1 v-show="!isSearch" class="store text-4xl  font-medium lg:block hidden"><i class="fab fa-apple"></i> MACBOOK</h1>
+    
+    
+    <div class="py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  place-items-center lg:auto-rows-max	">
         <product-item v-for="prop in product" :key="prop.id" :items="prop" />
     </div>
    
@@ -85,5 +90,12 @@ export default {
 </script>
 
 <style>
+    .store{
+        margin-left:65px;
+        margin-top:-25px
+    }
+    .sort{
+        margin-right: 70px;
+    }
 
 </style>

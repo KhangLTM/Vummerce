@@ -6,7 +6,7 @@
         
           <tr class=" w-full items-center "  v-show="cartItem.length">
             <th class=" hidden md:table-cell"></th>
-            <th class="  lg:px-4  text-left">Product</th>
+            <th class="  lg:px-4 text-xl  text-left">Product</th>
             <th class="hidden lg:block py-6   lg:text-right text-right lg:pl-0">
                   Quantity
             </th>
@@ -25,7 +25,7 @@
             <td>
               <p class="font-medium pt-4 md:ml-4">{{item.title}}</p>
               <form  >
-                <p class="text-gray-700 md:ml-4 text-sm font-medium">Left in stock : {{item.quantity}}</p>
+                <p class="text-gray-500 md:ml-4 text-sm font-medium">Left in stock : {{item.quantity}}</p>
                 <button  @click.prevent="removeItems(item)" class="text-gray-700 md:ml-4">
                   <small>(Remove item)</small>
                 </button>
@@ -45,8 +45,8 @@
                   {{item.price}} $
               </span>
             </td>
-            <td class="w-1/6 lg:w-auto text-right">
-              <span class=" text-sm lg:text-base font-medium">
+            <td class="w-1/6  lg:w-auto text-right">
+              <span class="text-base lg:text-base font-bold">
                   {{item.NewPrice}}$
               </span>
             </td>
@@ -92,7 +92,7 @@
                   <div class="lg:px-4 lg:py-2 m-2 text-lg lg:text-xl font-bold text-center text-gray-800">
                     Total
                   </div>
-                  <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-center text-gray-900">
+                  <div class="lg:px-4 lg:py-2 m-2 lg:text-lg font-bold text-xl text-center text-gray-900">
                     {{cartValue}} $
                   </div>
                 </div>

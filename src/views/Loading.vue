@@ -36,8 +36,7 @@ export default {
   color: #141414;
 }
 .b {
-  background: rgba(31, 41, 55,1);
-  border: 0.3em solid #dddada;  
+  background: rgba(31, 41, 55,1);  
   width: 4.5em;
   height: 4.5em;
   border-radius: 0.5em;

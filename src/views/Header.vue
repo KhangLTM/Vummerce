@@ -4,16 +4,16 @@
         <img class=" w-10" src="../assets/K-logo.jpg">
         <span class="px-2 text-base lg:text-xl text-white font-bold uppercase tracking-wide">KHANG LTM</span>
     </router-link>
-    <router-link to="/cart" class="md:w-1/3 md:flex md:justify-end  mb-2 pb-13 pl-14  lg:hidden fa-stack fa-lg has-badge">
+    <router-link to="/cart" class="md:w-1/3 md:flex md:justify-end  mt-1 mb-2 pb-13 pl-14  lg:hidden fa-stack fa-lg has-badge">
         <span class="md:mr-5 md:mt-1 pl-8 lg:hidden fa-stack fa-md has-badge" :data-count="lengthCart">
             <i class="fa fa-shopping-cart fa-stack-md red-cart"></i>
         </span>
 
     </router-link>
-    <button @click="onToggle()" class="mt-1  text-white inline-flex p-1 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none ">
+    <button @click="onToggle()" class=" mt-1  text-white inline-flex p-1 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none ">
         <i class="fas fa-bars fa-lg"></i>
     </button>
-    <div class="hidden ml-8 w-1/3 lg:w-1/4 md:relative md:block  text-gray-600">
+    <div class=" hidden ml-8 w-1/3 lg:w-1/2 md:relative md:block md:ml-20  text-gray-600">
         <input type="search" @input="searching()" v-model="SearchProd" placeholder="Search" class="w-full bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
         <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
             <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
@@ -21,7 +21,7 @@
             </svg>
         </button>
     </div>
-    <div   class="  top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" :class="{hidden:toggle}">
+    <div   class="nav  top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto  " :class="{hidden:toggle}">
         <div class=" lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
 
             <a v-show="isLoggedIn" href="#" class="lg:inline-flex font-bold lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-gray-900 hover:text-white">
@@ -138,6 +138,7 @@ export default {
     background: rgba(31, 41, 55);
     ;
 }
+
 
 @media only screen and (max-width:820px) {
     .fa-stack[data-count]:after {

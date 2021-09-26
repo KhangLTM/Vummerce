@@ -9,8 +9,8 @@
   </div>
   <img class=" h-56 w-full object-cover mt-3" :src="items.thumbnail_url" alt="NIKE AIR">
   <div class=" flex  items-center justify-between px-4 py-2 bg-gray-800">
-    <h1  class=" text-gray-200 font-bold text-xl">{{items.price}} $</h1>
-    <button @click="addToCart(items)" class="px-3 py-1 bg-gray-200 text-sm text-gray-900 hover:bg-blue-400 font-semibold rounded">Add to card</button>
+    <h1  class=" text-gray-200 font-bold text-2xl">{{items.price}} $</h1>
+    <button @click="addToCart(items)" class="px-3 py-1 bg-gray-100   text-black hover:bg-blue-400 font-semibold rounded">Add to card</button>
   </div>
 </div>
 </template>
