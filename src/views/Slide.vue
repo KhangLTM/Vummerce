@@ -34,7 +34,7 @@ export default {
             slides: [
                 'https://i.ytimg.com/vi/-Q7E1bkJ5Ds/maxresdefault.jpg',
                 'https://www.macworld.com/wp-content/uploads/2021/03/apple-mac-lineup-2019-100796683-orig-2.jpg?quality=50&strip=all&w=1024',
-                'https://www.igeeksblog.com/wp-content/uploads/2021/03/Upcoming-Apple-Products-in-2021.jpg',
+                'https://genk.mediacdn.vn/139269124445442048/2020/12/14/photo-1-16079159993821813024585.png',
                 'https://imgix.gizmodo.com.au/content/uploads/sites/2/2021/08/16/apple-products.jpg?ar=16%3A9&auto=format&fit=crop&q=65&w=1280'
             ],
             current: 0,
