@@ -1,7 +1,7 @@
 <template>
 <div class=" h-screen bg-gray-200 bgg flex flex-col space-y-10 justify-center items-center">
     <div class="bg-white w-96 shadow-xl rounded p-5">
-        <h1 class="text-3xl font-medium">Welcome</h1>
+        <h1 class="text-3xl font-medium">Register</h1>
         <p class="text-sm"> All best quality Apple Products are here. </p>
 
         <form @submit.prevent="onSubmit" class="space-y-5 mt-5">
