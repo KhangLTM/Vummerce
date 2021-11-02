@@ -1,7 +1,7 @@
 <template>
 <div class=" bg-gray-200 h-screen bgg flex flex-col space-y-10 justify-center items-center">
     <div class="bg-white w-96 shadow-xl rounded p-5">
-        <h1 class="text-3xl font-medium">Welcome</h1>
+        <h1 class="text-3xl font-medium">Login</h1>
         <p class="text-sm">Sign in and buy amazing product</p>
 
         <form  @submit.prevent="onSubmit" class=" space-y-5 mt-5">
