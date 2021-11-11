@@ -12,6 +12,6 @@ This project implements basic shopping cart features:
 
 ## Technical details
 
-* VueJS [^2.2.1]
+* VueJS [^2.6.14]
 * TailWind(https://tailwindcss.com/)
 * Firebase (auth and realtime database)
