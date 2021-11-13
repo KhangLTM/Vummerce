@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1 class="text-2xl font-bold">Comments ({{length}})</h1>
+    <h1 class="text-xl font-bold">Comments ({{length}})</h1>
     <form @submit.prevent="onSubmit()" class="flex ">
 
         <div class="w-full bg-white p-2 pt-4 rounded">
