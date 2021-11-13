@@ -33,8 +33,8 @@ export default {
         return {
             slides: [
                 'https://i.ytimg.com/vi/-Q7E1bkJ5Ds/maxresdefault.jpg',
-                'https://www.macworld.com/wp-content/uploads/2021/03/apple-mac-lineup-2019-100796683-orig-2.jpg?quality=50&strip=all&w=1024',
-                'https://genk.mediacdn.vn/139269124445442048/2020/12/14/photo-1-16079159993821813024585.png',
+                'https://www.investo.vn/wp-content/uploads/2021/09/0927_investo_huanha_apple.jpg',
+                'https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/02/16/958083-macbook-apple-watch.jpg',
                 'https://imgix.gizmodo.com.au/content/uploads/sites/2/2021/08/16/apple-products.jpg?ar=16%3A9&auto=format&fit=crop&q=65&w=1280'
             ],
             current: 0,
