@@ -29,7 +29,7 @@
         <p class="leading-relaxed">{{product.description}}</p>
         <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5"> 
         </div>
-         <span class="text-xl text-red-500  pt-10" >Only {{product.quantity}} left - order soon</span>
+         <span class="md:text-xl text-red-500  pt-10" >Only {{product.quantity}} left - order soon</span>
         <div class="flex py-7 ">
          
           <span class=" title-font font-medium text-4xl font-bold text-gray-900">{{product.price}} $</span>
