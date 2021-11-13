@@ -35,7 +35,7 @@
                             {{comments[commentIndex-1].username}}
                             <Star />
                         </p>
-                        <p class="font-sm text-gray-500">{{comments[commentIndex-1].time}}</p>
+                        <p class="text-xs md:text-base font-sm text-gray-500">{{comments[commentIndex-1].time}}</p>
                     </span>
 
                     <p class="font-medium  py-5 lg:text-xl">{{comments[commentIndex-1].comment}}</p>
