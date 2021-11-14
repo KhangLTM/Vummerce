@@ -53,8 +53,7 @@ export default {
                     .then(() => {
                         this.isreg = true,
                         this.$router.go({
-                        path: "/",
-                        force: true
+                        path: "/"
                         });
                     })
             }
