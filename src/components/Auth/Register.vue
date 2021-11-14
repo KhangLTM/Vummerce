@@ -51,8 +51,8 @@ export default {
             if (this.isValid) {
                 this.registerByEmail(data)
                     .then(() => {
-                        this.isreg = true
-                        this.$router.go(-1),
+                        this.isreg = true,
+                        this.$router.go(-100)
 
                     })
             }
