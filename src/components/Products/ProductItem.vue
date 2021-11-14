@@ -55,7 +55,7 @@ export default {
             this.$toast.open({
                 message:"Added To Your Cart",
                 type:"success",
-                duration:2000,
+                duration:1500,
                 dissmissible:true,
                 queue:false,
                 position:"top-right"
