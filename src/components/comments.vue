@@ -9,7 +9,7 @@
                     <img src="http://picsum.photos/50" alt="" class="rounded-full">
                 </div>
                 <div>
-                    <h1 class="md:text-lg font-semibold">{{currentUser.name}}</h1>
+                    <h1 class="mt-3 md:text-lg font-semibold">{{currentUser.name}}</h1>
                 </div>
             </div>
             <div class="mt-3 p-3 w-full">
