@@ -159,7 +159,6 @@ export default {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: red;
   top: 180px;
   left: 0px;
 }
