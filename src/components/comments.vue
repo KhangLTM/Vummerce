@@ -4,12 +4,12 @@
     <form @submit.prevent="onSubmit()" class="flex ">
 
         <div class="w-full bg-white p-2 pt-4 rounded">
-            <div class="flex ml-3">
+            <div v-if="isLoggedIn" class="flex ml-3">
                 <div class="mr-3">
-                    <img v-if="isLoggedIn" src="http://picsum.photos/50" alt="" class="rounded-full">
+                    <img src="http://picsum.photos/50" alt="" class="rounded-full">
                 </div>
                 <div>
-                    <h1 v-if="currentUser.name" class="font-semibold">{{currentUser.name}}</h1>
+                    <h1 class="font-semibold">{{currentUser.name}}</h1>
                 </div>
             </div>
             <div class="mt-3 p-3 w-full">
