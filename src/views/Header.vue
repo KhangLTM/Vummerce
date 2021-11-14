@@ -24,7 +24,7 @@
     <div   class="nav  top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto  " :class="{hidden:toggle}">
         <div class=" lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
 
-            <a v-show="isLoggedIn" href="#" class="lg:inline-flex font-bold lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-gray-900 hover:text-white">
+            <a v-if="currentUser.name" href="#" class="lg:inline-flex font-bold lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-gray-900 hover:text-white">
                 <span>Hello , {{currentUser.name}} !</span>
             </a>
 
