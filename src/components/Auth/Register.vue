@@ -52,9 +52,9 @@ export default {
                 this.registerByEmail(data)
                     .then(() => {
                         this.isreg = true
+                        this.$router.go()
                         this.$router.push({
                             name: 'mainpage'
-                        location.reload();
                         }).catch(() => {})
                     })
             }
