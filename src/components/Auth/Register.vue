@@ -54,6 +54,7 @@ export default {
                         this.isreg = true
                         this.$router.push({
                             name: 'mainpage'
+                        location.reload();
                         }).catch(() => {})
                     })
             }
