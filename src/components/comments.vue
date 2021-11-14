@@ -6,7 +6,7 @@
         <div class="w-full bg-white p-2 pt-4 rounded">
             <div class="flex ml-3">
                 <div class="mr-3">
-                    <img v-if="currentUser.name" src="http://picsum.photos/50" alt="" class="rounded-full">
+                    <img v-if="isLoggedIn" src="http://picsum.photos/50" alt="" class="rounded-full">
                 </div>
                 <div>
                     <h1 v-if="currentUser.name" class="font-semibold">{{currentUser.name}}</h1>
