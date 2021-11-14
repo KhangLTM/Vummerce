@@ -3,7 +3,7 @@
     <h1 class="text-xl md:text-2xl font-bold">Comments ({{length}})</h1>
     <form @submit.prevent="onSubmit()" class="flex ">
 
-        <div class="w-full bg-white p-2 pt-4 rounded">
+        <div v-if="isLoggedIn" class=" w-full bg-white p-2 pt-4 rounded">
             <div class="flex ml-3">
                 <div class="mr-3">
                     <img src="http://picsum.photos/50" alt="" class="rounded-full">
@@ -21,10 +21,11 @@
             </div>
 
         </div>
+        <div v-else class=" md:text-lg font-medium mt-4" > You must be <router-link :to="{name:'login'}" class="text-blue-500 hover:text-red-300" > logged in</router-link>  to post a comment </div>
     </form>
     <transition-group name="fade" >
     <div v-show="commentIndex <= numberCom" v-for="commentIndex of numberCom" :key="commentIndex" class="flex py-5 ">
-        <div class="w-full shadow-md   p-2 pt-4 rounded">
+        <div class="w-full shadow-md p-2 pt-4 rounded">
             <div class="flex ml-3">
                 <div class="mr-3">
                     <img src="https://picsum.photos/50" alt="" class="rounded-full">

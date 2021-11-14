@@ -52,7 +52,9 @@ export default {
                 this.registerByEmail(data)
                     .then(() => {
                         this.isreg = true
-                        this.$router.go(-1)
+                        this.$router.push('/'),
+                        this.$router.go()
+
                     })
             }
         },
