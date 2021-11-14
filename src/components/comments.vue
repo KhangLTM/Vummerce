@@ -4,7 +4,7 @@
     <form @submit.prevent="onSubmit()" class="flex ">
 
         <div class="w-full bg-white p-2 pt-4 rounded">
-            <div v-if="isLoggedIn" class="flex ml-3">
+            <div class="flex ml-3">
                 <div class="mr-3">
                     <img src="http://picsum.photos/50" alt="" class="rounded-full">
                 </div>
