@@ -3,9 +3,8 @@
    
        <Loading v-if="isLoad" />
       <div v-else>
-             
-        <section class="text-gray-700 body-font overflow-hidden bg-white">
-  <div class="container px-5 py-24 mx-auto">
+   <section class="text-gray-700 body-font overflow-hidden bg-white">
+  <div class="container px-5 py-8 md:py-14 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
       <img  class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" :src="product.thumbnail_url">
       <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">

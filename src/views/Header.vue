@@ -46,7 +46,7 @@
                                     </router-link>
                     
                                 </div>
-                                <div :class="{hidden:toggle}" class="origin-top-right  w-60  rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5  place" >
+                                <div :class="{hidden:toggle}" class="place right-10  origin-top-right  w-60  rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5  " >
                                     <div class="py-4 text-center " role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                         <a  v-show="isLoggedIn" class="block  px-4 py-2  text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 " role="menuitem">
                                             <span class="flex flex-col">
@@ -179,18 +179,18 @@ export default {
 }
 .place{
     position: absolute;
-    top:7%;
-    right:25%;
+    top:55px;
     z-index: 9999999999999;
-}   
+}
 
 @media only screen and (max-width:820px) {
     .fa-stack[data-count]:after {
-        left: 50%;
+        left: 55%;
         top: 8%;
     };
- }
 
+        
+}
 .outside {
   width: 100vw;
   height: 100vh;
@@ -198,5 +198,7 @@ export default {
   top: 0px;
   left: 0px;
 }
+
+
 </style>
 
