@@ -18,7 +18,8 @@
                 <button  v-if="!isLoggin" type="submit" class="bg-gray-100 text-center w-full py-2  hover:bg-gray-800 hover:text-white focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-gray-900 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                    Login
                 </button>
-            <button v-else type="submit" class="text-center w-full bg-gray-800 rounded-md text-white py-3 font-medium">Login</button>
+            <button v-else disabled class=" text-center w-full bg-gray-400 rounded-md text-white py-3 font-medium ">  <i class="fas fa-circle-notch fa-spin"></i>
+Login</button>
         </form>
     </div>
 </div>

@@ -16,10 +16,10 @@
             <div class="px-2">
                 <label for="type1" class="flex items-center cursor-pointer">
                     <input type="radio" class="form-radio h-5 w-5 text-gray-800" name="type" id="type1" checked>
-                    <img src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png" class="h-8 ml-3">
+                    <img src="https://leadershipmemphis.org/wp-content/uploads/2020/08/780370.png" class="h-8 ml-3 object-fit">
                 </label>
             </div>
-            <div class="px-2">
+            <div class="px-2 hidden md:block">
                 <label for="type2" class="flex items-center cursor-pointer">
                     <input type="radio" class="form-radio h-5 w-5 text-gray-800" name="type" id="type2">
                     <img src="https://www.sketchappsources.com/resources/source-image/PayPalCard.png" class="h-8 ml-3">
@@ -39,10 +39,10 @@
             </div>
         </div>
         <div class="mb-3 -mx-2 flex items-end">
-            <div class="px-2 w-1/2">
-                <label class="font-bold text-sm mb-2 ml-1">Expiration date</label>
+            <div class="px-2 w-2/3">
+                <label class="font-bold text-sm mb-2 ml-1 ">Expiration date</label>
                 <div>
-                    <select class="form-select w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-800 transition-colors cursor-pointer">
+                    <select class="text-sm md:text-md form-select w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-800 transition-colors cursor-pointer">
                         <option value="01">01 - January</option>
                         <option value="02">02 - February</option>
                         <option value="03">03 - March</option>
@@ -58,8 +58,8 @@
                     </select>
                 </div>
             </div>
-            <div class="px-2 w-1/2">
-                <select class="form-select w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-800 transition-colors cursor-pointer">
+            <div class="px-2 w-1/3">
+                <select class="text-sm md:text-md form-select w-full px-3 py-2 mb-1 border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-800 transition-colors cursor-pointer">
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
