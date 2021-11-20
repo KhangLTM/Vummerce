@@ -24,7 +24,6 @@ firebaseListener(authStatusChange);
 
 const router = new VueRouter({    
     mode:'hash',
-    // linkActiveClass: ' bg-gray-900 ',
 
     scrollBehavior() {
         return { x: 0, y: 0 }

@@ -1,18 +1,34 @@
 <template>
-    <div  @click="clickDetail(items.id)" id="prod" class="cursor-pointer  lg:flex lg:flex-col justify-between  max-w-xs bg-white shadow-lg rounded-lg overflow-hidden my-5 height">
-  <div   class="  px-4 py-5  ">
-    <h1  class="cursor-pointer text-gray-900 font-bold text-xl md:text-3xl uppercase hover:text-blue-600">{{items.title}}</h1>
-    <div>
-        <Start />
+<div class="w-80 flex justify-center items-center">
+    <div class="w-full p-4">
+        <div class="card flex flex-col justify-center p-10 bg-white rounded-lg shadow-xl cursor-pointer " @click="clickDetail(items.id)" >
+            <div class="prod-title  ">
+                <p class="text-xl uppercase text-gray-900 font-bold">
+                   {{items.title}}
+                </p>
+                <div class="uppercase text-sm text-gray-400 h-10 overflow-hidden ">
+                     {{items.description}}
+                </div>
+                
+            </div>
+            <div class="prod-img">
+                <img :src="items.thumbnail_url" class="w-full object-cover object-center"/>
+            </div>
+            <div class="mt-5">
+                
+                <div class="flex flex-col md:flex-row justify-between items-center text-gray-900 w-full">
+                    <p class="font-bold text-2xl mb-2 md:mb-0 mr-3 ">
+                        {{items.price}}$
+                    </p>
+                    <button @click.stop="addToCart(items)" class="  px-3 py-2 transition ease-in duration-200 uppercase rounded-md hover:bg-gray-800 hover:text-white border-2 border-gray-400 focus:outline-none ">
+                        <p  class="text-xs font-md">Add to cart</p>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <p class="text-gray-600 text-sm mt-0">{{items.description}}</p>
-  </div>
-  <img class=" h-56 w-full object-cover mt-3" :src="items.thumbnail_url" alt="NIKE AIR">
-  <div class=" flex  items-center justify-between px-4 py-2 bg-gray-800">
-    <h1  class=" text-gray-200 font-bold text-xl md:text-2xl">{{items.price}} $</h1>
-    <button @click.stop="addToCart(items)" class="px-3 py-1 bg-gray-100   text-black hover:bg-blue-400 font-semibold rounded">Add to card</button>
-  </div>
 </div>
+
 </template>
 
 <script>
@@ -21,12 +37,8 @@ import {
   mapGetters,
     mapMutations
 } from 'vuex'
-import Start from './Start.vue'
 export default {
-    components:{
-        Start
-
-    },
+   
     
     props: {
         items: {
@@ -81,7 +93,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     @media only screen and (min-width:820px){
     .height{
         min-height: 520px;

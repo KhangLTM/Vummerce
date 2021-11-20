@@ -41,7 +41,7 @@
 
                     <p class="font-medium  py-5 lg:text-xl">{{comments[commentIndex-1].comment}}</p>
                 </div>
-
+s
             </div>
 
         </div>
@@ -49,8 +49,13 @@
     </div>
     </transition-group>
     <div class="pt-5">
-        <button v-if="numberCom < length" class="bg-gray-800 hover:bg-gray-600 text-white font-bold  py-3 px-4 rounded " @click="loadMoreCom(1)">Load More Comment</button>
-        <button v-else class="bg-gray-800 hover:bg-gray-600 text-white font-bold py-3 px-4 rounded " @click="hideCom(3)">Hide Comment</button>
+        <button v-if="numberCom < length"  @click="loadMoreCom(1)" type="button" class="py-2 px-4   hover:bg-gray-800 hover:text-white focus:ring-gray-500 focus:ring-offset-gray-200   transition ease-in duration-200 text-gray-900 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                   Load more Comment
+        </button>
+        <button v-else   @click="hideCom(3)" type="button" class="py-2 px-4   hover:bg-gray-800 hover:text-white focus:ring-gray-500 focus:ring-offset-gray-200 text-white  transition ease-in duration-200 text-gray-900 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                  Hide Comment
+        </button>
+        
     </div>
 </div>
 </template>

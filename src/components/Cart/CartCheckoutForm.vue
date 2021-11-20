@@ -85,7 +85,11 @@
         </div>
         
         <div>
-            <button type="submit" class="block w-full max-w-xs mx-auto bg-gray-800 hover:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold"><i class="mdi mdi-lock-outline mr-1"></i> PAY NOW</button>
+            
+            <button @click="checkout()" type="button" class="block w-full text-xl py-2 max-w-xs mx-auto  hover:bg-gray-800 hover:text-white focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-gray-900 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                   Pay Now
+            </button>
+            
         </div>
     </div>
 </form>

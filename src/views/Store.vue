@@ -1,28 +1,19 @@
 <template>
-<div class='bg-white'>
-    <Loading v-show="isLoad" />
-    <Slide v-show="!isSearch" />
-    <span v-show="!isSearch" class="sort hidden lg:flex w-30  justify-end mt-7   ">
-            
-            <select class="  font-medium"  @change="selectSort" >
-                <option disabled>---Sorting Product---</option>
-                <option value="">No sort</option>
-                <option value="sortUp"> Sort by price up</option>
-                <option value="sortDown"> Sort by price down</option>
-            </select>
-            
-            <!-- <button class="px-10 " @click="sortByPriceUp">Sort by price up </button>
-            <button class="px-10 " @click="sortByPriceDown">Sort by price down </button> -->
-            
-    </span>
-    <h1 v-show="!isSearch" class="store text-4xl  font-medium lg:block hidden"><i class="fab fa-apple"></i> MACBOOK</h1>
+<div class='bgcolor'>
+    <Loading v-if="isLoad" />
+    <div v-else>
+        <Slide/>
+        <span  class=" sort hidden lg:flex w-30  justify-end mt-7   ">
+        </span>
+    <h1  class="store text-3xl  font-bold lg:block hidden pt-5"><i class="fab fa-apple"></i> MACBOOK</h1>
     
     
     <div class="py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  place-items-center lg:auto-rows-max	">
-        <product-item v-for="prop in product" :key="prop.id" :items="prop" />
+            <product-item v-for="prop in products" :key="prop.id" :items="prop" />
     </div>
    
-    <cant-find v-show="checkFind" />
+  
+    </div>
 </div>
 </template>
 
@@ -34,32 +25,21 @@ import {
 } from 'vuex'
 import ProductItem from '../components/Products/ProductItem.vue'
 import Slide from '../views/Slide.vue'
-import cantFind from '../components/Products/cantFind.vue'
 import Loading from '../views/Loading.vue'
 export default {
     components: {
         ProductItem,
         Slide,
-        cantFind,
         Loading
 
     },
+    data(){
+        return{
+            isLoad:true
+        }
+    },
     computed: {
-        ...mapGetters(['isSort','sortedProduct','products', 'titleSearch', 'isSearch','isLoad']),
-        product: function () {
-            if(!this.isSort){ 
-                if (!this.isSearch)
-                    return this.products
-                else  return this.titleSearch
-            }
-            else return this.sortedProduct
-       },
-        checkFind: function () {
-            if (this.isSearch && this.titleSearch.length === 0)
-                return true
-            else return false
-        },
-       
+        ...mapGetters(['products', 'titleSearch', 'isSearch']),
        
     },
     methods: {
@@ -81,7 +61,9 @@ export default {
     },
     created() {
         this.getProductList()
-        
+        setTimeout(()=>{
+            this.isLoad=false
+          },800)
     },
      
     
@@ -89,13 +71,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .store{
         margin-left:65px;
         margin-top:-25px
     }
     .sort{
         margin-right: 70px;
+    }
+    .bgcolor{
+        background-color: rgba(255, 255, 255, 0.938);
     }
 
 </style>

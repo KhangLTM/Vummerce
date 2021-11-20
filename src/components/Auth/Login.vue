@@ -1,23 +1,23 @@
 <template>
-<div class=" bg-gray-200 h-screen bgg flex flex-col space-y-10 justify-center items-center">
+<div class=" h-screen bgg flex flex-col space-y-10 justify-center items-center">
     <div class="bg-white w-96 shadow-xl rounded p-5">
         <h1 class="text-3xl font-medium">Login</h1>
         <p class="text-sm">Sign in and buy amazing product</p>
 
-        <form  @submit.prevent="onSubmit" class=" space-y-5 mt-5">
+        <form  @submit.prevent="onSubmit()" class=" space-y-5 mt-5">
             <input type="email" class="w-full h-12 border border-gray-800 rounded px-3" placeholder="Email" v-model="email" required />
             <div class="w-full flex items-center border border-gray-800 rounded px-3">
                 <input id="password" type="password" class="w-4/5 h-12" placeholder="Password" v-model="password" required />
-                <span @click="showPassword" class="text-blue-700 hover:bg-blue-400 rounded-md px-3">Show</span>
+                <span @click="showPassword" class="text-gray-700 hover:bg-gray-400 rounded-md px-3">Show</span>
             </div>
 
             <div>
-                <router-link to="/register" class="font-medium text-blue-900 hover:bg-blue-300 rounded-md p-2">Dont have account ? Register Now !</router-link>
+                <router-link to="/register" class="font-medium text-blue-800 hover:bg-gray-300 rounded-md p-2">Dont have account ? Register Now !</router-link>
             </div>
-            <button v-if="isLoggin" type="submit" class="text-center w-full bg-gray-400 rounded-md text-white py-3 font-medium" disabled>
-                <i class="fas fa-circle-notch fa-spin"></i>
-                Login
-            </button>
+            
+                <button  v-if="!isLoggin" type="submit" class="bg-gray-100 text-center w-full py-2  hover:bg-gray-800 hover:text-white focus:ring-green-500 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-gray-900 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                   Login
+                </button>
             <button v-else type="submit" class="text-center w-full bg-gray-800 rounded-md text-white py-3 font-medium">Login</button>
         </form>
     </div>
@@ -78,12 +78,5 @@ export default {
 </script>
 
 <style>
-@media only screen and (min-width:750px) {
-    .bgg {
-        background-image: url("https://cdn.wccftech.com/wp-content/uploads/2018/05/customers-buying-iPhone-X.jpg");
-        object-fit: cover;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
+
 </style>
